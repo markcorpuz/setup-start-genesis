@@ -18,13 +18,13 @@ function setup_link_custom_taxonomy_set() {
 		if( is_array( $taxonomies ) ) :
 
 			foreach( $taxonomies as $tax ) {
-				echo '<h2 style="color:red;">'.$tax.' == '.get_queried_object()->taxonomy.'</h2>';
+//				echo '<h2 style="color:red;">'.$tax.' == '.get_queried_object()->taxonomy.'</h2>';
 				$verify_template = get_stylesheet_directory().'/partials/taxonomy-'.$tax.'.php';
 				//var_dump( get_queried_object()->taxonomy );
 				//echo '<h1 style="color:red;">'.$verify_template.'</h1>';
 				// generic archive taxonomy page
 				if( is_tax( $tax ) && $tax == $get_tax && is_file( $verify_template ) ) {
-					echo '<h6 style="color:blue">Template file found!</h6>';
+//					echo '<h6 style="color:blue">Template file found!</h6>';
 					//add_action( 'genesis_loop', 'setup_link_custom_taxonomy_loop_set' );
 					add_action( 'genesis_loop', function() use ( $tax ) {
 						setup_link_custom_taxonomy_loop_set( $tax );
