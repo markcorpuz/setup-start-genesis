@@ -264,3 +264,20 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+/**
+ * Template Hierarchy
+ *
+ */
+function ea_template_hierarchy( $template ) {
+	if( is_home() )
+		$template = get_query_template( 'archive' );
+	return $template;
+}
+add_filter( 'template_include', 'ea_template_hierarchy' );
+
+
+Include_once( get_stylesheet_directory() . '/inc/loop.php' );
+Include_once( get_stylesheet_directory() . '/inc/loop-custom-2.php' );
+
+
