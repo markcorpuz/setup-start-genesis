@@ -46,6 +46,19 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 // Adds the Genesis Connect WooCommerce notice.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
+// Adds the content layout.
+//require_once get_stylesheet_directory() . '/lib/content-layout.php';
+require_once get_stylesheet_directory() . '/lib/block-layout.php';
+
+/**
+ * Add default layouts in addition to new layouts.
+ */
+if ( function_exists( 'genesis_add_type_to_layout' ) ) {
+   genesis_add_type_to_layout( 'content-sidebar', [ 'category', 'post_tag' ] );
+   genesis_add_type_to_layout( 'sidebar-content', [ 'category', 'post_tag' ] );
+   genesis_add_type_to_layout( 'full-width-content', [ 'category', 'post_tag' ] );
+}
+
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
 /**
  * Adds Gutenberg opt-in features and styling.
