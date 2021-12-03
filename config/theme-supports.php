@@ -1,6 +1,6 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * SETUP-START
  *
  * Theme supports.
  *
@@ -38,5 +38,13 @@ return [
 	'genesis-menus'                   => [
 		'primary'   => __( 'Header Menu', 'genesis-sample' ),
 		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
+	],
+	'genesis-structural-wraps'			=> [
+		'header',
+		'menu-primary',
+		'menu-secondary',
+		'site-inner',
+		'footer-widgets',
+		'footer'
 	],
 ];
