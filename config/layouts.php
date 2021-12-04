@@ -49,4 +49,9 @@ return [
 		'img'     => $url . 'c.gif',
 		'type'    => [ 'site' ],
 	],
+	'timeline-layout'         => [
+		'label'   => __( 'Timeline', 'genesis' ),
+		'img'     => $url . 'c.gif',
+		'type'    => [ 'site' ],
+	],
 ];
