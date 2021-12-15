@@ -28,6 +28,10 @@ function genesis_sample_localization_setup() {
 
 }
 
+// Sets Custom Loop.
+require_once( get_stylesheet_directory() . '/inc/loop.php' );
+require_once( get_stylesheet_directory() . '/inc/items.php' );
+
 // Adds helper functions.
 require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 
