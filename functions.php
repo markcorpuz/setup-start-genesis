@@ -47,6 +47,7 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 // Adds the Custom Functions.
+include_once( get_stylesheet_directory() . '/inc/markup.php' );
 include_once( get_stylesheet_directory() . '/inc/layout.php' );
 
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
