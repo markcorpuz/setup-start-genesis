@@ -27,7 +27,7 @@ $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_
 $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
 
 return [
-	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
+	'fonts-url'            => 'https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap',
 	'content-width'        => 1062,
 	'button-bg'            => $genesis_sample_link_color,
 	'button-color'         => $genesis_sample_link_color_contrast,
@@ -48,24 +48,59 @@ return [
 	],
 	'editor-font-sizes'    => [
 		[
-			'name' => __( 'Small', 'genesis-sample' ),
+			'name' => __( 'Smaller', 'setup-start' ),
 			'size' => 12,
+			'slug' => 'smaller',
+		],
+		[
+			'name' => __( 'Small', 'setup-start' ),
+			'size' => 14,
 			'slug' => 'small',
 		],
 		[
-			'name' => __( 'Normal', 'genesis-sample' ),
+			'name' => __( 'Base', 'setup-start' ),
+			'size' => 16,
+			'slug' => 'base',
+		],
+		[
+			'name' => __( 'Normal', 'setup-start' ),
 			'size' => 18,
 			'slug' => 'normal',
 		],
 		[
-			'name' => __( 'Large', 'genesis-sample' ),
-			'size' => 20,
+			'name' => __( 'Medium', 'setup-start' ),
+			'size' => 24,
+			'slug' => 'medium',
+		],
+		[
+			'name' => __( 'Large', 'setup-start' ),
+			'size' => 36,
 			'slug' => 'large',
 		],
 		[
-			'name' => __( 'Larger', 'genesis-sample' ),
-			'size' => 24,
+			'name' => __( 'Larger', 'setup-start' ),
+			'size' => 48,
 			'slug' => 'larger',
+		],
+		[
+			'name' => __( 'Largest', 'setup-start' ),
+			'size' => 60,
+			'slug' => 'largest',
+		],
+		[
+			'name' => __( 'Huge', 'setup-start' ),
+			'size' => 72,
+			'slug' => 'huge',
+		],
+		[
+			'name' => __( 'Huge2x', 'setup-start' ),
+			'size' => 96,
+			'slug' => 'huge2x',
+		],
+		[
+			'name' => __( 'Huge3x', 'setup-start' ),
+			'size' => 128,
+			'slug' => 'huge3x',
 		],
 	],
 ];

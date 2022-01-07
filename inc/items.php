@@ -211,12 +211,12 @@ function setup_child_overline_override_nolink() {
 function setup_child_title() {
 	global $wp_query;
 	$tag = ( is_singular() || -1 === $wp_query->current_post ) ? 'h3' : 'h2';
-	echo '<' . $tag . ' class="item title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></' . $tag . '>';
+	echo '<' . $tag . ' class="item title entry-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></' . $tag . '>';
 }
 function setup_child_title_nolink() {
 	global $wp_query;
 	$tag = ( is_singular() || -1 === $wp_query->current_post ) ? 'h3' : 'h2';
-	echo '<' . $tag . ' class="item title nolink">' . get_the_title() . '</' . $tag . '>';
+	echo '<' . $tag . ' class="item title entry-title nolink">' . get_the_title() . '</' . $tag . '>';
 }
 function setup_child_title_only() {
 	return get_the_title();

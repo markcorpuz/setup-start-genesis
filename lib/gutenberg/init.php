@@ -87,7 +87,8 @@ function genesis_sample_blocks_body_classes( $classes ) {
 add_theme_support( 'editor-styles' );
 
 // Enqueue editor styles.
-add_editor_style( '/lib/gutenberg/style-editor.css' );
+//add_editor_style( '/lib/gutenberg/style-editor.css' );
+add_editor_style( '/tw/setup-start-css/build/css/setup-style-editor.css' );
 
 // Adds support for block alignments.
 add_theme_support( 'align-wide' );

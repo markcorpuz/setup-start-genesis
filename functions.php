@@ -102,6 +102,14 @@ function genesis_sample_enqueue_scripts_styles() {
 
 }
 
+/*
+ * Replace default Genesis Sample styles
+ */
+add_filter( 'stylesheet_uri', 'setup_start_replace_default_style_sheet' );
+function setup_start_replace_default_style_sheet() {
+	wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/tw/setup-start-css/build/css/main.css' );
+}
+
 add_filter( 'body_class', 'genesis_sample_body_classes' );
 /**
  * Add additional classes to the body element.
