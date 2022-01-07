@@ -35,6 +35,9 @@ require_once( get_stylesheet_directory() . '/inc/items.php' );
 // Adds helper functions.
 require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 
+// Adds layout functions.
+require_once get_stylesheet_directory() . '/lib/functions/layout.php';
+
 // Adds image upload and color select to Customizer.
 require_once get_stylesheet_directory() . '/lib/customize.php';
 
